@@ -1,15 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "dist/client/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/dist/client/index.html"
-    }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/client"
 }
