@@ -4,7 +4,7 @@ import viteReact from '@vitejs/plugin-react'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
 
-export default defineConfig({
+const config = defineConfig({
   plugins: [
     viteTsConfigPaths({
       projects: ['./tsconfig.json'],
@@ -14,3 +14,5 @@ export default defineConfig({
     viteReact(),
   ],
 })
+
+export default config
